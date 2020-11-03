@@ -1,0 +1,32 @@
+package com.registration.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+@Entity
+public class Description {
+	
+	@Id
+	@GeneratedValue
+	private Integer Id;
+	private String description;
+	
+	
+	public Integer getId() {
+		return Id;
+	}
+	public void setId(Integer id) {
+		Id = id;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+
+}
